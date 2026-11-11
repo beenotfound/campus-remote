@@ -9,7 +9,7 @@ Campus-Remote 是一套 **Windows PowerShell 自动化脚本**，把电脑配置
 
 - **Sunshine**：被控端（抓屏 + NVENC/AMF/QSV 硬件编码 + 接收键鼠）；
 - **Tailscale**：私有网络（`100.x` 固定地址，免公网 IP / DDNS / 端口映射）；
-- **Moonlight**：iPad / 手机端客户端（解码显示 + 回传输入）。
+- **Moonlight**：iPad / Android / 手机端客户端（解码显示 + 回传输入）。
 
 仓库只包含原创脚本与文档（MIT）。Sunshine / Moonlight / Tailscale 是独立项目，**不随本仓库分发**。
 

@@ -11,7 +11,7 @@
 - 网络：**Tailscale** 私有网络，给电脑一个固定的 `100.x` 地址，免公网 IP / DDNS / 端口映射；
 - iPad / 手机端：**Moonlight** 解码显示、回传触摸/键鼠/音频。
 
-适合：宿舍/实验室/家里电脑 ↔ 教室/家里/外地 iPad，任何需要远程串流、又不想开公网端口的网络（校园网、家庭宽带、公司内网都可以）。
+适合：宿舍/实验室/家里电脑 ↔ 教室/家里/外地的 iPad / Android / 电脑，任何需要远程串流、又不想开公网端口的网络（校园网、家庭宽带、公司内网都可以）。
 
 不适合：不想改系统设置、没有管理员权限、或所在网络明确禁止远程访问的人。
 
@@ -45,7 +45,7 @@
 - [ ] Windows 10/11（**家庭版也可以**，不需要 RDP）
 - [ ] 管理员权限（会弹 UAC）
 - [ ] 一个 Tailscale 账号（Google / Microsoft / Apple 登录，免费）
-- [ ] iPad：Moonlight（中国区 App Store）+ Tailscale（**非中国区** Apple ID）
+- [ ] 客户端（iPad / Android）：Moonlight + Tailscale；Android 可用 F-Droid/GitHub APK + 官方 Tailscale APK
 - [ ] 电脑插电、盖子保持打开
 - [ ] 重要数据已备份
 

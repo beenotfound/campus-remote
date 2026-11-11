@@ -41,8 +41,22 @@ iPad (Moonlight) ── Tailscale 加密隧道 ──> 宿舍电脑 (Sunshine)
 
 - Windows 10/11（**家庭版也可以**，不需要 RDP）。
 - 支持硬件编码的 GPU（NVIDIA NVENC / AMD AMF / Intel QSV；NVIDIA 体验最好）。
-- iPad/iPhone：Moonlight（中国区 App Store 免费）；Tailscale（**非中国区** App Store，免费）。
 - 一个 Tailscale 账号（Google / Microsoft / Apple 登录，免费个人版即可）。
+- 客户端设备：iPad / iPhone / Android / Windows / macOS / Linux（见下方「支持的客户端」）。
+
+## 支持的客户端
+
+| 客户端 | Moonlight | Tailscale |
+|---|---|---|
+| iPad / iPhone | App Store（中国区可下） | App Store（**非中国区**） |
+| Android | F-Droid / GitHub APK | Google Play / 官方 APK |
+| Windows / macOS / Linux | 官方客户端 | 官方客户端 |
+
+- **Android（国区没有 Google Play 也能装）**
+  - Moonlight：F-Droid（包名 `com.limelight`）或 GitHub Releases 里的 `app-nonRoot-release.apk`。
+  - Tailscale：官方 APK 页 `https://pkgs.tailscale.com/stable/#android`，或 GitHub Releases 里的 `tailscale-android-universal-*.apk`。
+- 配对流程所有客户端一致：Moonlight 显示 4 位 PIN → 电脑运行 `配对.cmd` → 输入。
+- 如果给 Tailscale 配了 ACL，记得把 Android 设备也加进 `src`。
 
 ## 快速开始
 
@@ -52,7 +66,7 @@ iPad (Moonlight) ── Tailscale 加密隧道 ──> 宿舍电脑 (Sunshine)
    ```powershell
    tailscale up --auth-key=<YOUR_AUTH_KEY>
    ```
-4. iPad：安装 Tailscale + Moonlight，登录**同一个 Tailscale 账号**。
+4. 客户端（iPad / Android / 电脑）：安装 Tailscale + Moonlight，登录**同一个 Tailscale 账号**。
 5. 电脑运行 **`诊断.cmd`**，记下 `100.x.y.z`；Moonlight 里添加这个地址。
 6. 运行 **`配对.cmd`**，把 iPad 上显示的 4 位 PIN 输入 Sunshine Web UI（`https://127.0.0.1:47990`）。
 7. 完成，Moonlight 选 **Desktop** 即可。
