@@ -1,0 +1,19 @@
+# 本机运行状态 / 密钥，绝不提交
+config/
+logs/
+Downloads/
+Sunshine/
+Tailscale/
+
+# 安装包与二进制
+*.log
+*.msi
+*.exe
+*.zip
+*.7z
+*.dll
+*.pdb
+
+# 临时文件
+*.tmp
+*.bak

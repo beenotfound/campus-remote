@@ -1,0 +1,24 @@
+{
+  "transport": "tailscale",
+  "sunshine": {
+    "dir": "Sunshine",
+    "webUi": "https://127.0.0.1:47990",
+    "tcpPorts": [47984, 47989, 48010],
+    "udpPorts": "47998-48002"
+  },
+  "tailscale": {
+    "dir": "Tailscale",
+    "installed": false,
+    "ip": ""
+  },
+  "direct": {
+    "duckdnsSubdomain": "",
+    "duckdnsToken": "",
+    "allowedPrefixes": []
+  },
+  "power": {
+    "wake": ["08:00", "13:30", "19:00"],
+    "sleep": ["12:30", "18:00", "23:00"],
+    "lidAction": "do-nothing"
+  }
+}
